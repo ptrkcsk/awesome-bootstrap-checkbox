@@ -4,6 +4,7 @@
   "description": "Font Awesome Bootstrap Checkboxes & Radios. Pure css way to make inputs look prettier.",
   "main": "awesome-bootstrap-checkbox.css",
   "scripts": {
+    "build:demo-styles": "node-sass --output-style expanded demo/build.scss demo/build.css && node-sass --output-style expanded demo/bootstrap.scss demo/bootstrap.css",
     "lint": "stylelint awesome-bootstrap-checkbox.scss",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -31,6 +32,7 @@
     "bower.json"
   ],
   "devDependencies": {
+    "node-sass": "^4.0.0",
     "stylelint": "^7.6.0",
     "stylelint-config-standard": "^15.0.0"
   }

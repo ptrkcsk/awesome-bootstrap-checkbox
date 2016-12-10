@@ -34,7 +34,7 @@ $check-icon: $fa-var-check !default;
   }
 }
 
-.checkbox {
+.checkbox.awesome-bootstrap-checkbox {
   padding-left: 20px;
 
   label {
@@ -118,18 +118,18 @@ $check-icon: $fa-var-check !default;
 }
 
 // Checkbox variants
-@include checkbox-variant('.checkbox-primary', $brand-primary);
-@include checkbox-variant('.checkbox-danger', $brand-danger);
-@include checkbox-variant('.checkbox-info', $brand-info);
-@include checkbox-variant('.checkbox-warning', $brand-warning);
-@include checkbox-variant('.checkbox-success', $brand-success);
+@include checkbox-variant('.awesome-bootstrap-checkbox.checkbox-primary', $brand-primary);
+@include checkbox-variant('.awesome-bootstrap-checkbox.checkbox-danger', $brand-danger);
+@include checkbox-variant('.awesome-bootstrap-checkbox.checkbox-info', $brand-info);
+@include checkbox-variant('.awesome-bootstrap-checkbox.checkbox-warning', $brand-warning);
+@include checkbox-variant('.awesome-bootstrap-checkbox.checkbox-success', $brand-success);
 
 // Indeterminate variants
-@include checkbox-variant-indeterminate('.checkbox-primary', $brand-primary);
-@include checkbox-variant-indeterminate('.checkbox-danger', $brand-danger);
-@include checkbox-variant-indeterminate('.checkbox-info', $brand-info);
-@include checkbox-variant-indeterminate('.checkbox-warning', $brand-warning);
-@include checkbox-variant-indeterminate('.checkbox-success', $brand-success);
+@include checkbox-variant-indeterminate('.awesome-bootstrap-checkbox.checkbox-primary', $brand-primary);
+@include checkbox-variant-indeterminate('.awesome-bootstrap-checkbox.checkbox-danger', $brand-danger);
+@include checkbox-variant-indeterminate('.awesome-bootstrap-checkbox.checkbox-info', $brand-info);
+@include checkbox-variant-indeterminate('.awesome-bootstrap-checkbox.checkbox-warning', $brand-warning);
+@include checkbox-variant-indeterminate('.awesome-bootstrap-checkbox.checkbox-success', $brand-success);
 
 //
 // Radios
@@ -155,7 +155,7 @@ $check-icon: $fa-var-check !default;
   }
 }
 
-.radio {
+.radio.awesome-bootstrap-checkbox {
   padding-left: 20px;
 
   label {
@@ -223,11 +223,11 @@ $check-icon: $fa-var-check !default;
   }
 }
 
-@include radio-variant('.radio-primary', $brand-primary);
-@include radio-variant('.radio-danger', $brand-danger);
-@include radio-variant('.radio-info', $brand-info);
-@include radio-variant('.radio-warning', $brand-warning);
-@include radio-variant('.radio-success', $brand-success);
+@include radio-variant('.awesome-bootstrap-checkbox.radio-primary', $brand-primary);
+@include radio-variant('.awesome-bootstrap-checkbox.radio-danger', $brand-danger);
+@include radio-variant('.awesome-bootstrap-checkbox.radio-info', $brand-info);
+@include radio-variant('.awesome-bootstrap-checkbox.radio-warning', $brand-warning);
+@include radio-variant('.awesome-bootstrap-checkbox.radio-success', $brand-success);
 
 input[type="checkbox"],
 input[type="radio"] {
