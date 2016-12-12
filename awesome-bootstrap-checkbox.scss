@@ -2,9 +2,10 @@
 // Checkboxes
 // --------------------------------------------------
 
+$check-icon: $fa-var-check !default;
 $font-family-icon: 'FontAwesome' !default;
 $fa-var-check: "\f00c" !default;
-$check-icon: $fa-var-check !default;
+$transition-duration: .25s;
 
 @mixin checkbox-variant($parent, $color) {
   #{$parent} input[type="checkbox"]:checked + label,
@@ -55,20 +56,24 @@ $check-icon: $fa-var-check !default;
       left: 0;
       margin-left: -20px;
       position: absolute;
+      transition: background-color $transition-duration;
       width: 17px;
     }
 
     &::after {
       color: $input-color;
+      content: "";
       display: inline-block;
       font-size: 11px;
       height: 16px;
       left: 0;
       margin-left: -20px;
+      opacity: 0;
       padding-left: 3px;
       padding-top: 1px;
       position: absolute;
       top: 0;
+      transition: opacity $transition-duration;
       width: 16px;
     }
   }
@@ -85,6 +90,7 @@ $check-icon: $fa-var-check !default;
     &:checked + label::after {
       content: $check-icon;
       font-family: $font-family-icon;
+      opacity: 1;
     }
 
     &:indeterminate + label::after {
