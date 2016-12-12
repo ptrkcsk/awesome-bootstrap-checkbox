@@ -5,7 +5,7 @@
 $check-icon: $fa-var-check !default;
 $font-family-icon: 'FontAwesome' !default;
 $fa-var-check: "\f00c" !default;
-$transition-duration: .25s;
+$transition-duration: 0.25s;
 
 @mixin checkbox-variant($parent, $color) {
   #{$parent} input[type="checkbox"]:checked + label,
