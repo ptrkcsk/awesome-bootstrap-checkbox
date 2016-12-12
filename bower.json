@@ -1,5 +1,6 @@
 {
   "name": "awesome-bootstrap-checkbox",
+  "main": "awesome-bootstrap-checkbox.scss",
   "license": "MIT",
   "authors": [
     "okendoken flatlogic.com",
