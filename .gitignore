@@ -3,3 +3,4 @@ node_modules
 
 demo/bootstrap.css
 demo/build.css
+npm-debug.log
