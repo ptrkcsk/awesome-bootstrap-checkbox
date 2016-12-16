@@ -43,6 +43,7 @@ $awesome-bootstrap-checkbox-transition-duration: .2s;
 
   label {
     display: inline-block;
+    // TODO: Try adding `line-height: 1` to improve alignment
     padding-left: 5px;
     position: relative;
     vertical-align: middle;
